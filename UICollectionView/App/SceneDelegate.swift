@@ -16,10 +16,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
 		
 		let window = UIWindow(windowScene: windowScene)
-		let splashVC = SplashScreenViewController.get()
+		let splashVC = SplashScreenViewController.get(completion: homeViewController)
 		window.rootViewController = splashVC
 		window.makeKeyAndVisible()
 		self.window = window
     }
+	
+	func homeViewController() {
+		debugPrint("Navigate to Home")
+	}
 }
 

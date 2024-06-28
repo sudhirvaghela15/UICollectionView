@@ -16,9 +16,59 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pxj-ec-Sac">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_kuruma" translatesAutoresizingMaskIntoConstraints="NO" id="U0f-Cv-OLs">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jWa-Uc-lie">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_naruto" translatesAutoresizingMaskIntoConstraints="NO" id="rKi-zf-rAP">
+                                                <rect key="frame" x="98.333333333333329" y="278.66666666666663" width="196.33333333333337" height="294.66666666666663"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="rKi-zf-rAP" secondAttribute="height" multiplier="1:1.5" id="0E4-d9-de0"/>
+                                                    <constraint firstAttribute="width" secondItem="rKi-zf-rAP" secondAttribute="height" multiplier="1:1.5" id="uWn-g0-v31"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="hND-7D-p4h"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="rKi-zf-rAP" firstAttribute="width" secondItem="jWa-Uc-lie" secondAttribute="width" multiplier="0.5" id="2Y8-lk-jNF"/>
+                                            <constraint firstItem="rKi-zf-rAP" firstAttribute="centerX" secondItem="jWa-Uc-lie" secondAttribute="centerX" id="Ujm-3d-JOo"/>
+                                            <constraint firstItem="rKi-zf-rAP" firstAttribute="centerY" secondItem="jWa-Uc-lie" secondAttribute="centerY" id="nCl-bN-ImU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="B0K-UP-UJI"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="U0f-Cv-OLs" firstAttribute="leading" secondItem="B0K-UP-UJI" secondAttribute="leading" id="1cq-hs-cZk"/>
+                                    <constraint firstItem="B0K-UP-UJI" firstAttribute="trailing" secondItem="U0f-Cv-OLs" secondAttribute="trailing" id="K8s-SJ-tSb"/>
+                                    <constraint firstAttribute="bottom" secondItem="jWa-Uc-lie" secondAttribute="bottom" id="LjT-fR-Ykv"/>
+                                    <constraint firstItem="jWa-Uc-lie" firstAttribute="leading" secondItem="B0K-UP-UJI" secondAttribute="leading" id="Tp2-yc-dYj"/>
+                                    <constraint firstItem="jWa-Uc-lie" firstAttribute="top" secondItem="Pxj-ec-Sac" secondAttribute="top" id="Vn4-Z1-afk"/>
+                                    <constraint firstAttribute="trailing" secondItem="jWa-Uc-lie" secondAttribute="trailing" id="Yea-ex-XUM"/>
+                                    <constraint firstItem="U0f-Cv-OLs" firstAttribute="top" secondItem="Pxj-ec-Sac" secondAttribute="top" id="ZIa-6l-y05"/>
+                                    <constraint firstAttribute="bottom" secondItem="U0f-Cv-OLs" secondAttribute="bottom" id="ql5-db-RnT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pxj-ec-Sac" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="9zh-OW-P7c"/>
+                            <constraint firstItem="Pxj-ec-Sac" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="MRv-OL-YzY"/>
+                            <constraint firstAttribute="bottom" secondItem="Pxj-ec-Sac" secondAttribute="bottom" id="e7G-X9-Tlx"/>
+                            <constraint firstAttribute="trailing" secondItem="Pxj-ec-Sac" secondAttribute="trailing" id="rey-Ke-Nm8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgView" destination="rKi-zf-rAP" id="JoU-qt-elr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -26,6 +76,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_kuruma" width="450" height="817"/>
+        <image name="ic_naruto" width="788" height="1204"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
