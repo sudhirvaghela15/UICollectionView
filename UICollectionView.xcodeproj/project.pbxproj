@@ -49,6 +49,7 @@
 			membershipExceptions = (
 				Animation/ViewAnimationFactory.swift,
 				"Extension/UIStoryboard  + Extension.swift",
+				"Extension/UITableView + Exension.swift",
 				"Extension/UIViewController + Extension.swift",
 			);
 			target = F24FC6A42C2F3BB500198A76 /* UICollectionView */;
