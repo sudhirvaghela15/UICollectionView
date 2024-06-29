@@ -24,6 +24,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 	
 	func homeViewController() {
 		debugPrint("Navigate to Home")
+		window?.rootViewController = HomeViewController.get()
+		window?.makeKeyAndVisible()
 	}
 }
 
