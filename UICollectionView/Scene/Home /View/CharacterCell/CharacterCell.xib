@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23068.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +20,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vn8-JZ-Iwg">
                         <rect key="frame" x="0.0" y="0.0" width="256" height="273"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tk9-89-7GQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aerith" translatesAutoresizingMaskIntoConstraints="NO" id="tk9-89-7GQ">
                                 <rect key="frame" x="0.0" y="0.0" width="256" height="231"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tk9-89-7GQ" secondAttribute="height" multiplier="256:231" id="LpN-Uu-us3"/>
@@ -39,7 +38,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="BEH-Ed-c0H" secondAttribute="bottom" constant="8" id="0RY-4o-dVb"/>
                             <constraint firstAttribute="trailing" secondItem="tk9-89-7GQ" secondAttribute="trailing" id="5qq-XC-hHh"/>
@@ -68,8 +67,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="aerith" width="324" height="324"/>
     </resources>
 </document>

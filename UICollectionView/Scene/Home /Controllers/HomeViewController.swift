@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 		setupCollectionView()
+		setupLayout()
     }
 }
 
@@ -30,6 +31,7 @@ extension HomeViewController {
 	}
 	
 	private func setupCollectionView() {
+		collectionView.registerNib(CharacterCell.self)
 		collectionView.delegate = self
 		collectionView.dataSource = self
 	}
@@ -54,7 +56,12 @@ extension HomeViewController: UICollectionViewDataSource, UICollectionViewDelega
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-		return UICollectionViewCell()
+		let model = characters[indexPath.row]
+		let cell: CharacterCell = collectionView.dequeueReusableCell(
+			for: indexPath
+		)
+		cell.set(model: model)
+		return cell
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

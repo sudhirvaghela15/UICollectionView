@@ -6,10 +6,6 @@
 //
 
 import UIKit
-
-typealias CallBackVoid = () -> Void
-typealias CallBack<T> = (T) -> Void
-
 extension UIViewController  {
 	static var className: String {
 		return String(describing: self)

@@ -32,6 +32,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
+				JSON/ff7r.swift,
 			);
 			target = F24FC6A42C2F3BB500198A76 /* UICollectionView */;
 		};
@@ -51,6 +52,7 @@
 				"Extension/UIStoryboard  + Extension.swift",
 				"Extension/UITableView + Exension.swift",
 				"Extension/UIViewController + Extension.swift",
+				Helper.swift,
 			);
 			target = F24FC6A42C2F3BB500198A76 /* UICollectionView */;
 		};
