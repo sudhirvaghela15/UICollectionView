@@ -8,13 +8,13 @@
 import Foundation
 
 
-enum FileType: String {
+public enum FileType: String {
 	case json
 	case html
 	case plist
 }
 
-extension Bundle {
+public extension Bundle {
 	
 	func getPath(name: String, type: FileType) -> String? {
 		return path(forResource: name, ofType: type.rawValue)

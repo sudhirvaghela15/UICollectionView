@@ -7,12 +7,12 @@
 
 import UIKit
 
-enum Storyboard: String {
+public enum Storyboard: String {
 	case Home
 	case Onboarding
 }
 
-extension UIStoryboard {
+public extension UIStoryboard {
 	
 	/// get storyboard from custom storyboard type
 	/// - Parameter storyboard: storyboard enum for defince storyboard name's

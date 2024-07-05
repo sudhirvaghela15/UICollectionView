@@ -10,10 +10,8 @@
 		F24FC6A92C2F3BB500198A76 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FC6A82C2F3BB500198A76 /* AppDelegate.swift */; };
 		F24FC6AB2C2F3BB500198A76 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FC6AA2C2F3BB500198A76 /* SceneDelegate.swift */; };
 		F24FC6B52C2F3BB600198A76 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F24FC6B42C2F3BB600198A76 /* Base */; };
-		F24FC6C52C2F3F5F00198A76 /* SectionCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FC6C02C2F3F5F00198A76 /* SectionCharacters.swift */; };
 		F24FC6C62C2F3F5F00198A76 /* Stubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FC6C12C2F3F5F00198A76 /* Stubs.swift */; };
 		F24FC6C72C2F3F5F00198A76 /* Universe.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FC6C32C2F3F5F00198A76 /* Universe.swift */; };
-		F24FC6C92C2F3F5F00198A76 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24FC6BF2C2F3F5F00198A76 /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,8 +19,6 @@
 		F24FC6A82C2F3BB500198A76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F24FC6AA2C2F3BB500198A76 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F24FC6B42C2F3BB600198A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F24FC6BF2C2F3F5F00198A76 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		F24FC6C02C2F3F5F00198A76 /* SectionCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCharacters.swift; sourceTree = "<group>"; };
 		F24FC6C12C2F3F5F00198A76 /* Stubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stubs.swift; sourceTree = "<group>"; };
 		F24FC6C32C2F3F5F00198A76 /* Universe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Universe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,7 +28,8 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Assets.xcassets,
-				JSON/ff7r.swift,
+				JSON/FF7.json,
+				JSON/HomeStaticData.json,
 			);
 			target = F24FC6A42C2F3BB500198A76 /* UICollectionView */;
 		};
@@ -49,6 +46,7 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Animation/ViewAnimationFactory.swift,
+				"Extension/Bundle + Extension.swift",
 				"Extension/UIStoryboard  + Extension.swift",
 				"Extension/UITableView + Exension.swift",
 				"Extension/UIViewController + Extension.swift",
@@ -59,8 +57,11 @@
 		F2DC77AC2C2F50CD0018A250 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Controllers/FF7ViewController.swift,
 				Controllers/HomeViewController.swift,
 				Home.storyboard,
+				Model/Character.swift,
+				Model/SectionCharacters.swift,
 				View/CharacterCell/CharacterCell.swift,
 				View/CharacterCell/CharacterCell.xib,
 			);
@@ -116,8 +117,6 @@
 		F24FC6C42C2F3F5F00198A76 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F24FC6BF2C2F3F5F00198A76 /* Character.swift */,
-				F24FC6C02C2F3F5F00198A76 /* SectionCharacters.swift */,
 				F24FC6C12C2F3F5F00198A76 /* Stubs.swift */,
 				F24FC6C32C2F3F5F00198A76 /* Universe.swift */,
 			);
@@ -213,10 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F24FC6C52C2F3F5F00198A76 /* SectionCharacters.swift in Sources */,
 				F24FC6C62C2F3F5F00198A76 /* Stubs.swift in Sources */,
 				F24FC6C72C2F3F5F00198A76 /* Universe.swift in Sources */,
-				F24FC6C92C2F3F5F00198A76 /* Character.swift in Sources */,
 				F24FC6A92C2F3BB500198A76 /* AppDelegate.swift in Sources */,
 				F24FC6AB2C2F3BB500198A76 /* SceneDelegate.swift in Sources */,
 			);
